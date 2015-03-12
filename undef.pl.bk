@@ -1,0 +1,21 @@
+#!/usr/bin/perl
+
+$a = 5;
+
+# Print out whether or not $a is definied
+
+if (definied($a)) {print "\$a is definied\n";}
+else {print "\$a is undefinied\n";}
+
+# now for $b
+
+if (definied($b)) {print "\$a is definied\n";}
+else {print "\$b is undefinied\n";}
+
+# Now undef a and chk again
+
+$a = undef;
+
+
+if (definied($a)) {print "\$a is definied\n";}
+else {print "\$a is undefinied\n";}

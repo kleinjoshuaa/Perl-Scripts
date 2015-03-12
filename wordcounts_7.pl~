@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+   
+   # Make sure our hash is clean
+   undef %wordcounts;
+   
+   # Read the file until we're done
+   while (defined($line = <>))
+   {
+       # Add each word to our hash
+       foreach $word (split(" ", $line))
+       {
+           # Increment the count for this word. If we haven't yet seen
+           # the word, this will replace an undefined value with a 1
+           $wordcounts{$word}++;
+       }
+   }
+   
+   # Print out the results
+   foreach $word (sort(keys(%wordcounts)))
+   {
+       print "$word: $wordcounts{$word}\n";
+   }

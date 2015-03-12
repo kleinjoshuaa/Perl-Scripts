@@ -1,0 +1,41 @@
+#!/usr/bin/perl
+# listdir_obj.pl: List the contents of a directory (using an object)
+# (c) Joshua Klein, 2012
+
+# Usage listdir.pl dirname
+use strict;
+use warnings;
+
+use IO::Dir;
+
+# Get the name of the dir to list
+my $dirname;
+if (@ARGV==1)
+{  $dirname = $ARGV[0]; }
+else
+{ 
+print STDERR ("Usage $0 dirname\n"); 
+exit(1);
+}
+
+# create a directory object
+
+my $dir = IO::Dir->new($dirname);
+
+# Read until done
+my @files;
+while (defined(my $filename = $dir->read()))
+{
+	push(@files, $filename);
+}
+
+for (sort(@files))
+{
+	print "$_\n";
+}
+
+#Done
+$dir->close();
+# undefine the object
+undef($dir);
+
