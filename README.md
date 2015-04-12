@@ -11,8 +11,8 @@
 
  Some sample data is [ here ](prices.txt). 
 
- There's another little script [ here ](listdir_obj.txt) that uses a perl object to list the directories in a folder. 
+ There's another little script [ here ](listdir_obj.pl) that uses a perl object to list the directories in a folder. 
 
  Finally, the last few chapters of the course go through using perl as part of three teir architectures, and then finally subroutines and subroutine references. 
 
- [ Here ](tables_sub.txt) is a script that shows an example of using subroutine references to call a different subroutine depending on the arguments passed to the function. 
+ [ Here ](tables_sub.pl) is a script that shows an example of using subroutine references to call a different subroutine depending on the arguments passed to the function. 
