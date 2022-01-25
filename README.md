@@ -7,7 +7,7 @@
 
  Above is a screenshot of editing a perl script in Vim. The script takes in a comma delimited text file of what could be stock price values and outputs the date and price change in a nice, human readable format. 
 
- That example script can be downloaded [here ](prices_pl.txt target=). 
+ That example script can be downloaded [here ](prices/prices.pl). 
 
  Some sample data is [ here ](prices.txt). 
 
